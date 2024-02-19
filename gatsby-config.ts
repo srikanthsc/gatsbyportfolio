@@ -4,6 +4,8 @@ import "dotenv/config"
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
+  pathPrefix: "/gatsbyportfolio", // Add this line with your desired path prefix
+
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -11,7 +13,6 @@ const config: GatsbyConfig = {
     siteTitle: `Srikanth's Portfolio`,
     siteTitleAlt: `Srikanth's Portfolio`,
     siteHeadline: `Srikanth's Portfolio`,
-    siteUrl: `https://cara.lekoarts.de`,
     siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
